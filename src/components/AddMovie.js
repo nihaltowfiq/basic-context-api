@@ -14,7 +14,7 @@ const AddMovie = () => {
       price: moviePrice.current.value,
       id: Math.random() * 1000,
     };
-    setMovies((prevMovies) => [...prevMovies, newMovie]);
+    setMovies([...movies, newMovie]);
   };
   return (
     <div>
